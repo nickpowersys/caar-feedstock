@@ -1,0 +1,28 @@
+package:
+  name: caar
+  version: "3.1.0-beta"
+
+source:
+  git_rev: 3.1.0-beta
+  git_url: https://github.com/nickpowersys/CaaR.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - pandas
+    - future
+
+test:
+  imports:
+    - numpy
+    - pandas
+    - future
+
+about:
+  home: https://github.com/nickpowersys/CaaR
+  license: BSD 3-Clause License
+  license_file: LICENSE.md
